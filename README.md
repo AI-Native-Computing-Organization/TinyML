@@ -27,3 +27,10 @@ To overcome the above challenges, the following rules of thumb are recommended:
 4 - Use the highest workable sampling rate. Although it is highly expensive to transmit and store high-frequency data, we limit these issues when we are using TinyML systems since inferences are made on-device and streamlined to minimize storage. It is much easier to downsample data when there is too much than to upsample it when there is not enough. Thus, when collecting data to use for model training, it is recommended to obtain the highest resolution data possible to provide flexibility in downstream data engineering processes.
 
 Regardless of whether you are using sounds, images, vibrations, electrical signals, or other sensor data, these signals can be combined and used to train machine learning models to help model, classify, or predict events at the edge in real-time using inexpensive microcontrollers, which is a very powerful tool indeed.
+
+
+**Steps we follow:**
+First, we go for Data Engineering, then Model Engineering, thirdly Model Deployment, and lastly Product analysis
+
+![ML Lifecycle](https://github.com/AI-Native-Computing-Organization/TinyML/blob/testing/src/ml_cycle.png)
+
