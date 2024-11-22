@@ -20,6 +20,7 @@ OK! so fine!🥹 sometimes you might suffer a little bit of loss in accuracy but
 
 ## Why Quantize?
 Neural network models can take up a lot of space on disk, with the original AlexNet being over 200 MB in float format, for example. **Almost all of that size is taken up with the weights since there are often many millions of these in a single model**. **Because they’re all slightly different floating-point numbers, simple compression formats like “zip” don’t compress them well**. They are arranged in large layers though, and within each layer, the weights tend to be **normally distributed within a certain range, for example, -3.0 to 6.0.**
+![image](https://github.com/user-attachments/assets/34e3c280-ef5b-4f21-91c7-f08ea9e7d55b)
 
 The simplest motivation for quantization is to **shrink file sizes by storing the min and max for each layer and then compressing each float value to an eight-bit integer representing the closest real number in a linear set of 256 within the range.** For example with the -3.0 to 6.0 range, **a 0 byte would represent -3.0, a 255 would stand for 6.0, and 128 would represent about 1.5.** This means you can get the benefit of a file on disk that’s shrunk by 75%, and then convert back to float after loading so that your existing floating-point code can work without any changes.
 
