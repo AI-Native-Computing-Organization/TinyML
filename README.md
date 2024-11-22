@@ -2,7 +2,7 @@
 Tiny Machine Learning, is a rapidly growing field focused on developing machine learning models that can run on extremely resource-constrained devices. These devices often have limited memory, processing power, and battery life, such as microcontrollers, sensors, and other IoT devices.
 
 
-## The roles of senors in TinyML
+## The roles of sensors in TinyML
 The Role of Sensors in TinyML Applications
 Sensors are important for machine learning applications as they act as a vehicle between algorithmic resources and characteristics of the physical environment. Today there is a continued push towards low-cost and high-performance sensors, especially for applications such as air quality monitoring and predictive maintenance. There are two main types of sensing: in situ and remote sensing. 
 
