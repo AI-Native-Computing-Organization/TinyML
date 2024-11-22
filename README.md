@@ -49,5 +49,9 @@ Model Validation. It is commonplace to generate multiple models and to compare t
 
 Model Deployment. The last stage of the lifecycle involves the deployment of the model in the production environment. For tiny machine learning applications, this is one of the most important stages. The model size must be reduced sufficiently to fit on the embedded device through various means such as model compression (i.e., model distillation), type conversion (e.g.., changing model weights from floats to integers), and lossless compression (e.g., Huffman encoding). The model must then be compiled into a format compatible with the end device. We will learn about “quantization” and use it to optimize the model size for performance and latency to make sure we are building sufficiently ‘tiny’ models. We will use TensorFlow’s quantization API, as well as understand what’s going on behind the scenes. 
 
-After all of these stages, continuous monitoring of the model in the production environment is typically necessary to ensure that it is working effectively. If, after all of these steps, the performance of the model is unsatisfactory in the production environment, the model must be updated. This can be done using new design requirements, data, or modeling techniques. This is the essence of the machine learning lifecycle.
+After all of these stages, continuous monitoring of the model in the production environment is typically necessary to ensure that it is working effectively. If, after all of these steps, the performance of the model is unsatisfactory in the production environment, the model must be 
+updated. This can be done using new design requirements, data, or modeling techniques. This is the essence of the machine learning lifecycle.
+
+**We create our ML models using TensorFlow,  TensorFlow Lite to make it a lighter version and Lite micro is for much lighter ones**
+![image](https://github.com/user-attachments/assets/243c9e31-a815-4c98-afda-4a4b9b83e065)
 
